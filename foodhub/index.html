@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food List</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>Food Menu</h1>
+
+    <!-- Search Bar -->
+    <div class="search-container">
+        <input type="text" id="search-box" placeholder="Search food..." onkeyup="searchFood()">
+    </div>
+
+    <!-- Cart Button -->
+    <button id="cart-btn" onclick="toggleCart()">🛒 View Cart (<span id="cart-count">0</span>)</button>
+
+    <!-- Food List Container -->
+    <div id="food-container"></div>
+
+    <!-- Shopping Cart -->
+    <div id="cart-container" class="hidden">
+        <h2>Your Cart</h2>
+        <ul id="cart-list"></ul>
+        <p id="cart-total">Total: $0.00</p>
+        <button class="checkout-btn" onclick="checkout()">Checkout</button>
+        <button class="close-btn" onclick="toggleCart()">Close</button>
+    </div>
+<p>v!ron
+</p>
+    <script src="script.js"></script>
+</body>
+</html>
